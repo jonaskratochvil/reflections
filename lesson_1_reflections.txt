@@ -1,0 +1,38 @@
+By running sublm "name" editor will automatically open
+Press Ctrl+S and Ctlr+q to save and quit
+
+We would like to save a version whenever we want to 
+
+Git: Any editor, offline, manual save 
+
+commit - each commit represents a different version in time  
+
+diff commit - compares two ids of commits
+
+repository - multiple files that we want to keep track of together (e.g. CSV, HTML making together a website)
+		   - if you make a commit you change all your files in repository
+
+git clone - we don't want to download just the latest version of a repository but also all previous commits within this repository
+		  - just type git clone and than for example a link to github
+		  - by cd we can go into it and by typing git log we see all changes
+		  - type git diff to compare two previous versions just git diff id1 id2
+		  - type git config --global color.ui auto for color highliting
+
+git checkout - temporary restore to previous version
+
+git init - inicialize a new repository. Only files from that directory (and subdirectories inside that directory) will be contained in that repository 
+
+git status - status of your repository
+
+working directory -> staging area (by running git add "name")-> repository (commit all files from stage together)
+git reset resets a file from staging area back to working directory
+
+git commit - commits from staging area - Sublime will automatically open so that you can write a message of changes
+
+git diff - compares working directory with staging area
+git diff -- staged compares staging area and commit 1
+git diff commit1 commit 2 compares two comits
+
+branches - sometimes you want to branch out the versions of your files (use git branch "easy"    ->    git checkout "easy")
+
+merging - process of combining two braches
